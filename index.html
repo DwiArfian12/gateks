@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Gateks | FianDev</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="assets/img/icon.png" rel="icon">
+    <link href="assets/img/icon.png" rel="apple-touch-icon">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+            <h1 class="logo me-auto">
+                <a style="display: flex;" href="index.html"><i>Gateks</i></a>
+            </h1>
+        </div>
+    </header>
+    <section id="hero">
+        <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" style="background-image:url(assets/img/slide/kalk.jpg)">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown">Selamat Datang di
+                                <span><i>Gateks</i></span>
+                            </h2>
+                            <p class="animate__animated animate__fadeInUp"><i>Gateks</i> | Ubah Gambar Menjadi Teks!
+                                gambar menjadi teks!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image:url(assets/img/slide/bil.jpg)">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown">Apa fungsi <i>Gateks</i>?</h2>
+                            <p class="animate__animated animate__fadeInUp"><i>Gateks</i> berfungsi untuk membaca isi
+                                teks yang ada pada gambar dan mengubahnya menjadi teks yang dapat Anda salin.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+                </a>
+            </div>
+    </section>
+    <main id="main">
+        <section id="calc" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Cobain <i>Gateks</i> yuk!</h2>
+                </div>
+                <div class="row" style="text-align: center;">
+                    <div class="col-lg mt-5 mt-lg-0 d-flex align-items-stretch">
+                        <div class="php-email-form">
+                            <div class="form-group mt-3">
+                                <h5>Pilih Foto/Gambar yang ingin kamu ubah menjadi teks <i
+                                        class="bi bi-arrow-repeat"></i></h5>
+                                <h6>*Format : .jpg, .jpeg, .png, dsb.</h6>
+                                <input class="form-control mt-4" type="file" accept="image/*" id="myFile">
+                                <p id="wait"></p>
+                            </div>
+                            <div class="form-group mt-3" style="display: none" id="divOutput">
+                                <p>Hasil konversi :</p>
+                                <textarea class="form-control" style="height: 200px;" id="convertedText"></textarea>
+                                <p style="font-size: 12px; float: right; margin-top: 5px;">*Akurasi teks tergantung pada kualitas gambar dan konektivitas ke server</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <h3><i>Gateks</i></h3>
+            <div class="social-links">
+                <a href="https://instagram.com/d.arfian" class="instagram">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+                <a href="https://github.com/DwiArfian12" class="github">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://wa.me/6285877043903" class="whatsapp">
+                    <i class="bx bxl-whatsapp"></i>
+                </a>
+                <a href="mailto:dwiarfiann@gmail.com" class="gmail">
+                    <i class="bx bxl-gmail"></i>
+                </a>
+            </div>
+            <div class="copyright">&copy; Copyright <strong>
+                    <span><i>Gateks</i></span>
+                </strong>. All Rights Reserved </div>
+            <div class="credits">Made by <a href="https://instagram.com/d.arfian">Dwi Arfian (FianDev)</a>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+    <script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
